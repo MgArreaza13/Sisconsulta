@@ -72,6 +72,9 @@ if(navigator.serviceWorker){
 		return $(window).scrollTop() > $(window).height() - (descriptionHeight * 2)
 
 	}
-
+$("#MenuIcono").on("click",function () {
+          $("#MenuResponsivo ul").toggleClass("active")
+        }) 
 
 })()
+

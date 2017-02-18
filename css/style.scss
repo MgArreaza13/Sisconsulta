@@ -251,8 +251,13 @@ textarea {
   margin: 0 auto;
   margin-top: -50px;
 }
+
 #map{
   height: 500px;
+}
+
+#MenuIcono{
+  display: none;
 }
 /* ==========================================================================
    Helper classes
@@ -413,6 +418,48 @@ textarea {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
+
+
+@media only screen and (max-width: 960px) {
+    /* Style adjustments for viewports that meet the condition */
+#MenuIcono{
+  display: block;
+}
+#MenuResponsivo{
+  ul{
+    position: absolute;
+    width: 100%;
+    font-size: 1.5em;
+    top: 70px;
+    background-color: #222;
+    left: 0px;
+    text-align: center;
+    display: none;
+
+    li{
+      display: block;
+      margin-top: 1em;
+      padding: 10px 15px;
+    }
+  }
+}
+
+#location{
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  #mapa {
+    width: auto;
+    height: auto
+  }
+}
+#contact-form{
+  width: 100%;
+  font-size: 1em;
+}
+}
+
+
 
 @media print,
        (min-resolution: 1.25dppx),
